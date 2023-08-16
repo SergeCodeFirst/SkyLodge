@@ -1,4 +1,5 @@
 ﻿using backend.Data;
+using backend.Services.GuessService;
 using Microsoft.EntityFrameworkCore;
 //using AutoMapper;
 
@@ -23,7 +24,7 @@ builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 
 // AutoMapper
 builder.Services.AddAutoMapper(typeof(Program).Assembly); // Register Auto Mapper
-builder.Services.AddScoped<IUserService, UserService>(); // Everytime we use the interface IUserService it will use an instance of UserService class
+builder.Services.AddScoped<IGuessService, GuessService>(); // Everytime we use the interface IUserService it will use an instance of UserService class
 
 var app = builder.Build();
 

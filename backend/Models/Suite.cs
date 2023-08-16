@@ -10,7 +10,7 @@ namespace backend.Models
 		public string? SuitName { get; set; }
 		public string? SuitDesc { get; set; }
 		public int SuitFloor { get; set; }
-		public decimal SuitPrice { get; set; }
+		public double SuitPrice { get; set; }
 		public DateTime CreatedAt { get; set; } = DateTime.Now;
 		public DateTime Updated { get; set; } = DateTime.Now;
 

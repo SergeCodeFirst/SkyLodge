@@ -15,7 +15,7 @@ namespace backend.Services.GuessService
             _mapper = mapper;
         }
 
-        public ServiceResponse<AddGuessDto> AddUser()
+        public ServiceResponse<AddGuessDto> AddGuess()
         {
             var NewServiceResponse = new ServiceResponse<AddGuessDto>();
 

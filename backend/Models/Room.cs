@@ -11,7 +11,7 @@ namespace backend.Models
 		public string? RoomName { get; set; }
 		public string? RoomNum { get; set; }
 		public int RoomFloor { get; set; }
-		public decimal RoomPrice { get; set; } // decimal is better for price than double (could be use for temperature) 
+		public double RoomPrice { get; set; } // decimal is better for price than double (could be use for temperature) 
 		public string? RoomDesc { get; set; }
 		public DateTime CreatedAt { get; set; } = DateTime.Now;
 		public DateTime UpdatedAT { get; set; } = DateTime.Now;
