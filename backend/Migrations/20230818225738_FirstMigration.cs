@@ -118,8 +118,7 @@ namespace backend.Migrations
                         name: "FK_Bathrooms_Suites_SuiteId",
                         column: x => x.SuiteId,
                         principalTable: "Suites",
-                        principalColumn: "SuiteId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "SuiteId");
                 });
 
             migrationBuilder.CreateTable(
@@ -155,8 +154,7 @@ namespace backend.Migrations
                         name: "FK_Bookings_Suites_SuiteId",
                         column: x => x.SuiteId,
                         principalTable: "Suites",
-                        principalColumn: "SuiteId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "SuiteId");
                 });
 
             migrationBuilder.CreateTable(
@@ -184,8 +182,7 @@ namespace backend.Migrations
                         name: "FK_Images_Suites_SuiteId",
                         column: x => x.SuiteId,
                         principalTable: "Suites",
-                        principalColumn: "SuiteId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "SuiteId");
                 });
 
             migrationBuilder.CreateIndex(

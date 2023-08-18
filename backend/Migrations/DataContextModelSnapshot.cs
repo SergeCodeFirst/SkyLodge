@@ -259,7 +259,6 @@ namespace backend.Migrations
                     b.HasOne("backend.Models.Suite", "MySuite")
                         .WithMany("MyBathrooms")
                         .HasForeignKey("SuiteId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MyRoom");
@@ -284,7 +283,6 @@ namespace backend.Migrations
                     b.HasOne("backend.Models.Suite", "MySuite")
                         .WithMany("MyBookings")
                         .HasForeignKey("SuiteId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MyGuess");
@@ -305,7 +303,6 @@ namespace backend.Migrations
                     b.HasOne("backend.Models.Suite", "MySuite")
                         .WithMany("MyImages")
                         .HasForeignKey("SuiteId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MyRoom");
